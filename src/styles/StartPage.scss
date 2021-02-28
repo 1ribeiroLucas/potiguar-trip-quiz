@@ -22,3 +22,14 @@
 img.map-image {
   transform: rotate(40deg);
 }
+
+span.logos {
+  display: inline-block;
+  position: absolute;
+  max-width: 400px;
+  bottom: 0;
+
+  img {
+    width: 100%;
+  }
+}
