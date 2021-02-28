@@ -1,0 +1,86 @@
+// KEYFRAMES
+@keyframes question-box-size {
+  from {
+    height: 35rem;
+    font-size: 5.6rem;
+  }
+  to {
+    height: 10rem;
+    font-size: 2.4rem;
+  }
+}
+
+.quiz-box {
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: $image-background no-repeat left top;
+  background-size: cover;
+
+  .quiz-avatar-container {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    .avatar-box {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  .question {
+    width: 85%;
+    min-height: 10rem;
+    font-size: 2.4rem;
+    border: 2px solid $writing-light;
+    border-radius: 5px;
+    background: $primary-color-plus;
+    text-align: center;
+    padding: 1.6rem 0;
+    margin: 3.2rem;
+    animation-name: question-box-size;
+    animation-duration: 2s;
+  }
+
+  .answers {
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4.8rem;
+
+    .answer {
+      border: none;
+      width: 80%;
+      font-size: 2.4rem;
+      font-family: 'Indie Flower', cursive;
+      background: $primary-color;
+      border-radius: 5px;
+      margin: 1.6rem;
+      padding: 1.8rem;
+      text-align: center;
+
+      [type=radio] {
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: 0;
+      }
+
+      [type=radio]:checked + div {
+        border: 1px solid $primary-color;
+        background: white;
+      }
+    }
+  }
+}

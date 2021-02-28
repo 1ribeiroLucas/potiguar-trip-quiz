@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+@import './shared.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Indie Flower', cursive;
+}
+
+#root {
+  max-width: 600px;
+  min-height: 100vh;
+  background: #d4551f;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.change-button {
+  position: absolute;
+  bottom: 0;
+}
+
+@import './styles/AvatarSelectionPage.scss';
+@import './styles/StartPage.scss';
+@import './styles/QuizPage.scss';
