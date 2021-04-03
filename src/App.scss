@@ -9,13 +9,13 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: 68.5%;
   font-family: 'Indie Flower', cursive;
 }
 
 #root {
   max-width: 600px;
-  min-height: 100vh;
+  max-height: 640px;
   background: #d4551f;
   margin: 0 auto;
   overflow: hidden;
@@ -26,6 +26,8 @@
   bottom: 0;
 }
 
-@import './styles/AvatarSelectionPage.scss';
-@import './styles/StartPage.scss';
-@import './styles/QuizPage.scss';
+@media screen and (max-width: 360px) {
+  @import './styles/AvatarSelectionPage.scss';
+  @import './styles/StartPage.scss';
+  @import './styles/QuizPage.scss';
+}
