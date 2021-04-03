@@ -1,6 +1,5 @@
 .title-box {
   width: 85%;
-  height: 22.4rem;
   border-radius: 10px;
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
   margin: 2.4rem auto;
@@ -22,6 +21,7 @@
   
 img.map-image {
   transform: rotate(40deg);
+  width: 500px;
 }
 
 img.logos {

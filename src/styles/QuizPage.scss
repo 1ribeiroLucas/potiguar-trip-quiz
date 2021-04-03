@@ -5,18 +5,19 @@
     font-size: 5.6rem;
   }
   to {
-    height: 10rem;
-    font-size: 2.4rem;
+    height: fit-content;
+    font-size: 1.6rem;
   }
 }
 
 .quiz-box {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   background: $image-background no-repeat left top;
   background-size: cover;
+  overflow-y: scroll;
 
   .quiz-avatar-container {
     max-width: 100%;
@@ -39,14 +40,15 @@
 
   .question {
     width: 85%;
-    min-height: 10rem;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     border: 2px solid $writing-light;
     border-radius: 5px;
     background: $primary-color-plus;
     text-align: center;
-    padding: 1.6rem 0;
+    padding: .8rem 0;
     margin: 3.2rem;
+    position: relative;
+    z-index: 1;
     animation-name: question-box-size;
     animation-duration: 2s;
   }
@@ -56,18 +58,21 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
+    position: fixed;
+    bottom: 4px;
     align-items: center;
-    margin: 4.8rem;
+    margin: .8rem;
 
     .answer {
       border: none;
       width: 80%;
-      font-size: 2.4rem;
+      font-size: 1.2rem;
       font-family: 'Indie Flower', cursive;
       background: $primary-color;
       border-radius: 5px;
-      margin: 1.6rem;
-      padding: 1.8rem;
+      margin: .8rem;
+      margin-top: 0;
+      padding: .6rem;
       text-align: center;
 
       [type=radio] {

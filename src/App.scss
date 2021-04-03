@@ -13,9 +13,9 @@
   font-family: 'Indie Flower', cursive;
 }
 
-#root {
+main {
   max-width: 600px;
-  max-height: 640px;
+  height: 100vh;
   background: #d4551f;
   margin: 0 auto;
   overflow: hidden;
@@ -26,7 +26,7 @@
   bottom: 0;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) and (max-height: 500px) {
   @import './styles/AvatarSelectionPage.scss';
   @import './styles/StartPage.scss';
   @import './styles/QuizPage.scss';
