@@ -9,13 +9,21 @@
 }
 
 :root {
-  font-size: 62.5%;
+  font-size: 68.5%;
   font-family: 'Indie Flower', cursive;
+}
+body {
+  background: #d4551f;
 }
 
 #root {
+  max-height: 724px;
+}
+
+main {
   max-width: 600px;
-  min-height: 100vh;
+  min-height: 500px;
+  height: 100%;
   background: #d4551f;
   margin: 0 auto;
   overflow: hidden;
@@ -26,6 +34,20 @@
   bottom: 0;
 }
 
-@import './styles/AvatarSelectionPage.scss';
-@import './styles/StartPage.scss';
-@import './styles/QuizPage.scss';
+@media screen and (max-height: 500px) {
+  @import './styles/AvatarSelectionPage.scss';
+  @import './styles/StartPage.scss';
+  @import './styles/QuizPage.scss';
+}
+
+@media screen and (max-height: 600px) {
+  @import './styles/responsive/600px-height.scss';
+}
+
+@media screen and (max-width: 600px) and (max-height: 724px){
+  @import './styles/responsive/600px-width.scss';
+}
+
+@media screen and (min-width: 601px) {
+  @import './styles/responsive/bigger-screens.scss';
+}

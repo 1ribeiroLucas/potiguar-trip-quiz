@@ -16,7 +16,7 @@ export default function StartPage(props) {
         <span>Trip</span>
       </div>
       <img className="map-image" src={map} alt="Mapa" />
-      <span className="logos"><img src={logos} alt={logos} /></span>
+      <img className="logos" src={logos} alt="Oferecimento" />
     </>
   )
 }

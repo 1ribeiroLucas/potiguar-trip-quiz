@@ -46,6 +46,7 @@ function App() {
     setAvatarSelection(false);
     setQuizPage(false);
     setResultsPage(false);
+    setUserScore(0);
   }
 
   return (
